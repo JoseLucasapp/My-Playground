@@ -1,22 +1,22 @@
 using System;
 
 class MainClass {
-  public static void Main (string[] args){
+  public static void Main (string[] args) {
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     Console.WriteLine("Welcome to Password Generator:");
     Console.WriteLine("How many characters does your password need?");
 
-    Random randNum = new Random();
-
-    int password_length;
     int length = Convert.ToInt32(Console.ReadLine());
-    string max = "10";
+    Random random = new Random();
+    
+    int generate;
+    var password = "";
 
-    for(int i = 1; i < length; i++){
-      max += "0";
+    for (int i =0; i < length; i++){
+      generate = random.Next(36);
+      password = password + chars[generate];
     }
 
-    password_length = Convert.ToInt32(max);
-    int password = randNum.Next(password_length);
-    Console.WriteLine(password);
+    Console.WriteLine("Your Password: " + password);
   }
 }
