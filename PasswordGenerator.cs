@@ -4,11 +4,15 @@ class MainClass {
   public static void Main (string[] args){
     Console.WriteLine("Welcome to Password Generator:");
     Console.WriteLine("How many characters does your password need?");
-    int length = Convert.ToInt32(Console.ReadLine());
     Random randNum = new Random();
-    for(int i=0; i < length; i++){
-      int c = randNum.Next(9);
+    int password_length;
+    int length = Convert.ToInt32(Console.ReadLine());
+    string max = "10";
+    for(int i = 1; i < length; i++){
+      max += "0";
     }
+    password_length = Convert.ToInt32(max);
+    int c = randNum.Next(password_length);
     Console.WriteLine(c);
   }
 }
