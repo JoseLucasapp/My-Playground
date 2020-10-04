@@ -6,7 +6,7 @@ class MainClass {
     Console.WriteLine("Welcome to Password Generator:");
     Console.WriteLine("How many characters does your password need?");
 
-    int length = Convert.ToInt32(Console.ReadLine());
+    int length = Int32.Parse(Console.ReadLine());
     Random random = new Random();
     
     int generate;
