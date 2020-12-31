@@ -4,8 +4,12 @@ const app = express();
 
 const port = 3000;
 
+app.set('views', './views');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+
 app.get('/', (req, res)=>{
-	res.send('Welcome to Home Page');
+	res.render('index');
 });
 app.get('/about', (req, res)=>{
 	res.send('About page')
