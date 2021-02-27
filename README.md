@@ -22,3 +22,11 @@
     * Info: Simple express server.
   </details>
 </dl>
+<dl>
+  <details>
+    <summary>Simple Form</summary>
+
+    * Language: Dart
+    * Info: Simple form created using only dart.
+  </details>
+</dl>
