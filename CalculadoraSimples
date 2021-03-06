@@ -1,0 +1,16 @@
+funcao calculadora(op, n1, n2){
+  se(op == "/"){
+    retorna n1 / n2;
+  }
+  se(op == "-"){
+    retorna n1 - n2;
+  }
+  se(op == "*"){
+    retorna n1 * n2;
+  }
+  senao{
+    retorna n1 + n2;
+  }
+}
+
+escreva("Resultado: "+texto(calculadora("*",1,9)));
