@@ -16,10 +16,10 @@
 </dl>
 <dl>
   <details>
-    <summary>Simple express server</summary>
+    <summary>Simple calculator</summary>
 
-    * Language: Javascript
-    * Info: Simple express server.
+    * Language: Go
+    * Info: Simple calculator.
   </details>
 </dl>
 <dl>
